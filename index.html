@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitVitta — Bem-estar e qualidade de vida</title>
+  <meta name="description" content="FitVitta: conteúdo e novidades para uma rotina com mais bem-estar.">
+  <style>
+    :root {
+      color-scheme: light;
+      --green: #176b45;
+      --green-dark: #104b31;
+      --mint: #eaf7ef;
+      --text: #183328;
+      --muted: #587064;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f5fbf6 0%, #ffffff 70%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e2eee6;
+      background: rgba(255,255,255,.9);
+    }
+    .logo { font-size: 1.55rem; font-weight: 800; color: var(--green); letter-spacing: -.5px; }
+    .tag { color: var(--muted); font-size: .9rem; }
+    main {
+      width: min(960px, 90%);
+      margin: auto;
+      padding: 76px 0;
+      text-align: center;
+    }
+    .pill {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--mint);
+      color: var(--green-dark);
+      font-size: .85rem;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 22px auto 16px;
+      max-width: 760px;
+      font-size: clamp(2.3rem, 6vw, 4.4rem);
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+    h1 span { color: var(--green); }
+    p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .note {
+      margin: 34px auto 0;
+      padding: 18px 20px;
+      max-width: 590px;
+      border: 1px solid #dcebe0;
+      border-radius: 14px;
+      background: #fff;
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+    footer {
+      padding: 22px 7%;
+      text-align: center;
+      border-top: 1px solid #e2eee6;
+      color: #718579;
+      font-size: .85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FitVitta</div>
+    <div class="tag">Bem-estar no seu ritmo</div>
+  </header>
+
+  <main>
+    <span class="pill">SAÚDE • BEM-ESTAR • ROTINA</span>
+    <h1>Um passo de cada vez para uma vida com <span>mais bem-estar.</span></h1>
+    <p>
+      Bem-vindo à FitVitta. Estamos preparando este espaço para compartilhar
+      conteúdos e novidades que podem ajudar você a cuidar melhor da sua rotina.
+    </p>
+    <div class="note">
+      <strong>Site em preparação.</strong><br>
+      Em breve, novidades por aqui.
+    </div>
+  </main>
+
+  <footer>© <span id="year">2026</span> FitVitta. Todos os direitos reservados.</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
